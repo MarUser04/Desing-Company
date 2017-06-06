@@ -1,0 +1,367 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Cabin', sans-serif; }
+
+div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+div.lateral {
+  min-width: 25%;
+  min-height: 100vh;
+  background: #F44336;
+  left: 0;
+  top: 0; }
+  div.lateral div.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    margin-left: 30px;
+    margin-top: 80px; }
+    div.lateral div.menu h2 {
+      font-size: 2em;
+      color: white; }
+    div.lateral div.menu ul {
+      margin-top: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      list-style: none; }
+    div.lateral div.menu li {
+      margin-bottom: 15px;
+      margin-right: 80px;
+      padding: 10px; }
+      div.lateral div.menu li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+        margin-right: 60px; }
+        div.lateral div.menu li a:hover {
+          color: black; }
+      div.lateral div.menu li:hover {
+        background: white;
+        cursor: pointer; }
+        div.lateral div.menu li:hover a {
+          color: black; }
+
+main {
+  min-width: 70%;
+  min-height: 100vh;
+  background: white;
+  margin-left: 65px; }
+  main h1 {
+    color: black;
+    font-size: 4em;
+    margin-top: 70px; }
+  main div.showcase {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    main div.showcase a {
+      color: #F44336;
+      text-decoration: none;
+      cursor: default;
+      font-size: 3.2em;
+      font-weight: bold; }
+    main div.showcase div.galeria {
+      margin-top: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      main div.showcase div.galeria img {
+        width: 450px;
+        height: 300px;
+        margin-right: 20px;
+        margin-bottom: 25px;
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        opacity: 0.7; }
+        main div.showcase div.galeria img:hover {
+          opacity: 1;
+          cursor: pointer; }
+  main div.services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px; }
+    main div.services a {
+      color: #F44336;
+      text-decoration: none;
+      cursor: default;
+      font-size: 3.2em;
+      font-weight: bold; }
+    main div.services p {
+      margin-top: 15px;
+      color: black; }
+  main div.designers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    main div.designers a {
+      color: #F44336;
+      text-decoration: none;
+      cursor: default;
+      font-size: 3.2em;
+      font-weight: bold; }
+    main div.designers div.staff {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      main div.designers div.staff div.team1, main div.designers div.staff div.team2, main div.designers div.staff div.team3 {
+        margin-top: 15px;
+        border: 1px solid #ccc;
+        width: 280px;
+        margin-right: 20px;
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+        main div.designers div.staff div.team1 img, main div.designers div.staff div.team2 img, main div.designers div.staff div.team3 img {
+          width: 100%;
+          height: 210px; }
+        main div.designers div.staff div.team1 div.desc, main div.designers div.staff div.team2 div.desc, main div.designers div.staff div.team3 div.desc {
+          padding: 15px;
+          padding-bottom: 5px;
+          background: #F8F8F8; }
+  main div.packages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px; }
+    main div.packages a {
+      color: #F44336;
+      text-decoration: none;
+      cursor: default;
+      font-size: 3.2em;
+      font-weight: bold; }
+    main div.packages p {
+      margin-top: 15px;
+      color: black; }
+    main div.packages div.promos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin: 20px auto;
+      margin-left: 1px; }
+      main div.packages div.promos div.basic {
+        width: 440px;
+        height: 650px;
+        background: #ECE8E8;
+        margin-right: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        main div.packages div.promos div.basic span {
+          color: black;
+          margin-top: 15px;
+          margin-bottom: 25px; }
+          main div.packages div.promos div.basic span:first-child {
+            margin-top: 0px;
+            font-size: 2em;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 70px;
+            background: #636262;
+            color: white;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            main div.packages div.promos div.basic span:first-child hr {
+              margin-bottom: 0px; }
+        main div.packages div.promos div.basic button {
+          margin-top: 15px;
+          background: white;
+          padding: 20px;
+          border: none; }
+          main div.packages div.promos div.basic button a {
+            font-size: 1.2em;
+            text-decoration: none;
+            color: black;
+            font-weight: normal; }
+            main div.packages div.promos div.basic button a:hover {
+              color: white; }
+          main div.packages div.promos div.basic button:hover {
+            background: black;
+            -webkit-transition: 0.7s;
+            transition: 0.7s;
+            cursor: pointer; }
+            main div.packages div.promos div.basic button:hover a {
+              color: white; }
+      main div.packages div.promos div.pro {
+        width: 440px;
+        height: 400px;
+        background: gold;
+        width: 440px;
+        height: 650px;
+        background: #ECE8E8;
+        margin-right: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        main div.packages div.promos div.pro span {
+          color: black;
+          margin-top: 15px;
+          margin-bottom: 25px; }
+          main div.packages div.promos div.pro span:first-child {
+            margin-top: 0px;
+            font-size: 2em;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 70px;
+            background: #F44336;
+            color: white;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            main div.packages div.promos div.pro span:first-child hr {
+              margin-bottom: 0px; }
+        main div.packages div.promos div.pro button {
+          margin-top: 15px;
+          background: #F44336;
+          padding: 20px;
+          border: none; }
+          main div.packages div.promos div.pro button a {
+            font-size: 1.2em;
+            text-decoration: none;
+            color: white;
+            font-weight: normal; }
+            main div.packages div.promos div.pro button a:hover {
+              color: white; }
+          main div.packages div.promos div.pro button:hover {
+            background: black;
+            -webkit-transition: 0.7s;
+            transition: 0.7s;
+            cursor: pointer; }
+            main div.packages div.promos div.pro button:hover a {
+              color: white; }
+  main div.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px; }
+    main div.contact a {
+      color: #F44336;
+      text-decoration: none;
+      cursor: default;
+      font-size: 3.2em;
+      font-weight: bold; }
+    main div.contact p {
+      margin-top: 15px;
+      color: black; }
+    main div.contact form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      main div.contact form label {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 1.4em; }
+      main div.contact form input {
+        width: 900px;
+        height: 50px; }
+      main div.contact form button {
+        background: #F44336;
+        color: white;
+        font-size: 1.6em;
+        width: 900px;
+        border: none;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding: 15px; }
+        main div.contact form button:hover {
+          cursor: pointer;
+          background: #ECE8E8;
+          color: black;
+          -webkit-transition: 0,7s;
+          transition: 0,7s; }
+  main footer {
+    width: 100%;
+    background: #ECE8E8;
+    color: black;
+    font-size: 1.1em;
+    text-align: right;
+    padding: 20px;
+    margin-left: 0px; }
