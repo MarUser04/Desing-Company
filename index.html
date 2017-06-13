@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <title>Design Company</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+   <!-- <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">-->
+
+   
+
 </head>
 <body>
 
@@ -31,12 +34,12 @@
         <div class="showcase">
            <a name="showcaseSection">Showcase.</a>
            <div class="galeria">
-               <img src="images/atrium.jpg" alt="">
-               <img src="images/bedroom.jpg" alt="">
-               <img src="images/diningroom.jpg" alt="">
-               <img src="images/kitchenconcrete.jpg" alt="">
-               <img src="images/livingroom.jpg" alt="">
-               <img src="images/livingroom2.jpg" alt="">
+               <img src="images/atrium.jpg" alt="" class="imgC">
+               <img src="images/bedroom.jpg" alt="" class="imgC">
+               <img src="images/diningroom.jpg" alt="" class="imgC">
+               <img src="images/kitchenconcrete.jpg" alt="" class="imgC">
+               <img src="images/livingroom.jpg" alt="" class="imgC">
+               <img src="images/livingroom2.jpg" alt="" class="imgC">
           </div>
         </div>
 
@@ -122,18 +125,18 @@
         </div>
 
         <div class="contact">
-            <a name="contactSection">Packages.</a>
+            <a name="contactSection">Contact.</a>
             <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
        
             <form action="">
                 <label for="name">Name</label>
                 <input type="text" id="name">
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input type="email" name="email" id="email">
                 <label for="message">Message</label>
                 <input type="text" id="message">
 
-                <button>Send Message</button>
+                <button id="send">Send Message</button>
             </form>
         </div>
 
@@ -141,5 +144,7 @@
 
     </main>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -65,6 +65,19 @@ div.lateral {
         cursor: pointer; }
         div.lateral div.menu li:hover a {
           color: black; }
+    @media (max-width: 1225px) {
+      div.lateral div.menu {
+        margin-right: 40px;
+        width: 70%; }
+        div.lateral div.menu h2 {
+          font-size: 1.8em; }
+        div.lateral div.menu li {
+          margin-right: 40px; }
+          div.lateral div.menu li a {
+            font-size: 1.2em; } }
+  @media (max-width: 1080px) {
+    div.lateral {
+      display: none; } }
 
 main {
   min-width: 70%;
@@ -75,6 +88,9 @@ main {
     color: black;
     font-size: 4em;
     margin-top: 70px; }
+    @media (max-width: 1080px) {
+      main h1 {
+        text-align: center; } }
   main div.showcase {
     margin-top: 20px;
     display: -webkit-box;
@@ -112,6 +128,17 @@ main {
         main div.showcase div.galeria img:hover {
           opacity: 1;
           cursor: pointer; }
+      @media (max-width: 1360px) {
+        main div.showcase div.galeria {
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
+    @media (max-width: 1360px) {
+      main div.showcase {
+        text-align: center; } }
   main div.services {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -164,6 +191,14 @@ main {
           padding: 15px;
           padding-bottom: 5px;
           background: #F8F8F8; }
+      @media (max-width: 1310px) {
+        main div.designers div.staff {
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
   main div.packages {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -206,7 +241,9 @@ main {
                 flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center; }
+                align-items: center;
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
         main div.packages div.promos div.basic span {
           color: black;
           margin-top: 15px;
@@ -266,7 +303,9 @@ main {
                 flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center; }
+                align-items: center;
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
         main div.packages div.promos div.pro span {
           color: black;
           margin-top: 15px;
@@ -309,6 +348,26 @@ main {
             cursor: pointer; }
             main div.packages div.promos div.pro button:hover a {
               color: white; }
+      @media (max-width: 1000px) {
+        main div.packages div.promos {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          margin-left: 25%; }
+          main div.packages div.promos div.basic, main div.packages div.promos div.pro {
+            margin-bottom: 30px; } }
+      @media (max-width: 800px) {
+        main div.packages div.promos {
+          margin-left: 15%; } }
+    @media (max-width: 1000px) {
+      main div.packages {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   main div.contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -357,6 +416,21 @@ main {
           color: black;
           -webkit-transition: 0,7s;
           transition: 0,7s; }
+      @media (max-width: 1000px) {
+        main div.contact form {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          main div.contact form input {
+            width: 60%; }
+          main div.contact form button {
+            width: 60%; } }
+    @media (max-width: 1000px) {
+      main div.contact a, main div.contact p {
+        text-align: center; } }
   main footer {
     width: 100%;
     background: #ECE8E8;
@@ -365,3 +439,8 @@ main {
     text-align: right;
     padding: 20px;
     margin-left: 0px; }
+
+.imgGrande {
+  width: 70%;
+  height: 800px;
+  z-index: 1; }
